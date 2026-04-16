@@ -15,14 +15,17 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
   },
   "dependencies": {
-    "@prisma/client": "^7.7.0",
-    "express": "^5.2.1",
-    "prisma": "^5.22.0"
+    "@prisma/client": "^5.22.0",
+    "express": "^5.2.1"
   },
   "devDependencies": {
+    "prisma": "^5.22.0",
     "nodemon": "^3.1.14"
   }
 }
